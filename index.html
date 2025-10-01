@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stone, Paper & Scissors Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Stone, Paper & Scissors Game</h1>
+
+  <div class="choices" id="choices">
+    <div class="choice" id="rock" tabindex="0" role="button" aria-pressed="false">
+      <img class="rock-img" src="/images/rock.png" alt="Rock" />
+    </div>
+
+    <div class="choice" id="paper" tabindex="0" role="button" aria-pressed="false">
+      <img src="/images/paper.png" alt="Paper" />
+    </div>
+
+    <div class="choice" id="scissors" tabindex="0" role="button" aria-pressed="false">
+      <img src="/images/scissors.png" alt="Scissors" />
+    </div>
+  </div>
+
+  <div class="score-board" id="score-board">
+    <div class="score" aria-label="Your score">
+      <p id="user-score">0</p>
+      <p>You</p>
+    </div>
+
+    <div class="score" aria-label="Computer score">
+      <p id="comp-score">0</p>
+      <p>Computer</p>
+    </div>
+  </div>
+
+  <!-- Round counter -->
+  <div id="round-counter" aria-live="polite">
+    <p>Round: <span id="round">1</span></p>
+  </div>
+
+  <!-- Reset Button (matches style.css and JS) -->
+  <button id="reset-btn" type="button">Reset Game</button>
+
+  <div class="result" id="result" aria-live="polite">
+    <p id="msg">Make your move!</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
